@@ -3,20 +3,10 @@ public class App {
         System.out.println("Hello, World!");
 
         int[] arr = {1,2,3,4,5,6,7,8,9,10};
-        int res = findMiddleElement(arr);
-        System.out.println("Middle pointer: " + res);
+        int res = FindMiddleIndex.findMiddleElement(arr);
+        System.out.println("FindMiddleIndex: Middle pointer: " + res);
+        System.out.println("FindMiddleIndex: Middle element: " + arr[res]);
     }
 
-    public static int findMiddleElement(int[] arr) {
 
-        int leftPointer = 0;
-        int rightPointer = arr.length -1;
-
-        while (leftPointer < rightPointer) {
-            ++leftPointer;
-            --rightPointer;
-        }
-
-        return leftPointer;
-    }
 }
